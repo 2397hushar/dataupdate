@@ -1,0 +1,95 @@
+***********************************************************Step 1: Set Up the Testing Environment***********************************************************************
+Install Java Development Kit (JDK):
+
+Download and install the JDK from the Oracle website.
+
+Set up environment variables JAVA_HOME and PATH to include the JDK bin directory.
+
+Install Selenium WebDriver:
+
+Download the Selenium Java Client Driver from the Selenium website.
+
+Download the ChromeDriver executable from the ChromeDriver website and place it in a directory included in your system PATH.
+
+Set Up a Java Project:
+
+Create a new Java project in your favorite IDE (Eclipse, IntelliJ IDEA, etc.).
+
+Add the Selenium Java Client Driver .jar files to your project’s build path.
+
+Add TestNG Dependencies:
+
+Include TestNG dependency in your pom.xml if you're using Maven:
+
+
+************************************************************Step 2: Write Test Scenarios and Test Cases*******************************************************************
+
+Test Scenario 1: Login Functionality
+Test Case 1.1: Verify that the user can successfully log in with valid credentials.
+
+Steps:
+
+Navigate to the login page.
+
+Enter the username: test@kennect.io.
+
+Enter the password: Qwerty@1234.
+
+Click the login button.
+
+Verify that the user is redirected to the home page.
+
+Test Scenario 2: Home Page
+Test Case 2.1: Verify that the home page displays the list of todos.
+
+Steps:
+
+Log in with valid credentials.
+
+Verify that the list of todos is visible.
+
+Test Case 2.2: Verify that the user can access the Cost Calculator for blood tests.
+
+Steps:
+
+Log in with valid credentials.
+
+Click on the Cost Calculator link/button.
+
+Verify that the Cost Calculator page is displayed.
+
+Test Scenario 3: Cost Calculator for Blood Tests
+Test Case 3.1: Verify that the user can select blood tests and calculate the cost.
+
+Steps:
+
+Log in with valid credentials.
+
+Navigate to the Cost Calculator.
+
+Select multiple blood tests.
+
+Apply any discounts if applicable.
+
+Verify that the total cost is calculated and displayed correctly.
+
+Test Scenario 4: Adding Patients and Creating Tests
+Test Case 4.1: Verify that the user can add patient details and create test requests.
+
+Steps:
+
+Log in with valid credentials.
+
+Navigate to the Add Patient section.
+
+Fill in patient details and submit the form.
+
+Verify that the new patient is added to the list of todos.
+
+
+********************************************************************Step 3: Automate the Test Cases using Selenium with Java (Page Object Model)*****************************************************
+
+********************************************************************Step 4: Documentation on How to Run the Tests************************************************************************************
+Set Up the Environment:
+
+Ensure you have Java and ChromeDriver installed and configured in your system PATH.
